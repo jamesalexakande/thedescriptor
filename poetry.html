@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -12,13 +11,16 @@
 <header class="site-header">
 <div class="nav-wrap">
 <a class="brand" href="index.html">James "TheDescriptor" Akande<span class="brand-sub">Writer &amp; Storyteller</span></a>
-<button aria-label="Toggle navigation" class="nav-toggle">Menu</button>
+<button aria-label="Toggle navigation" aria-expanded="false" class="nav-toggle">
+  <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</button>
 <nav>
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
 <li><a href="books.html">Books</a></li>
 <li class="nav-item--dropdown nav-item--dropdown-active">
-<span class="nav-group-label">Poetry &amp; Essays</span>
+<button type="button" class="nav-group-label" aria-expanded="false">Poetry &amp; Essays</button>
 <ul class="nav-dropdown">
 <li><a aria-current="page" href="poetry.html">Poetry</a></li>
 <li><a href="essays.html">Essays</a></li>
@@ -49,7 +51,7 @@
 <div class="card-grid">
 <div class="card">
 <span class="tag tag--gold">Poetry Collection</span>
-<div class="card-cover">The Infinite Now<br/><em>Cover placeholder</em></div>
+<div class="card-cover">The Infinite Now</div>
 <h3>The Infinite Now</h3>
 <p class="meta">Poetry Collection / Anthology</p>
 <p>An anthology built around presence — the strange, infinite weight of the current moment.</p>
@@ -62,110 +64,33 @@
 <div class="container">
 <h2>Standalone pieces</h2>
 <hr class="rule"/>
-<div class="card" style="margin-bottom:28px;">
-<h3 style="font-style:italic;">Demeter</h3>
-<p class="meta">Standalone poem</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-You are...Demeter.<br/>
-Goddess of earth, spring and soil,<br/>
-Radiant life on very earth,<br/>
-The forests worship your every step<br/>
-You are... Demeter:<br/>
-Goddess. Radiant. Wise.
-</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-You make your home amidst the<br/>
-creatures of the wild; surrounded<br/>
-by the spirits of wind and tree.<br/>
-Nature is itself, your open field,<br/>
-your childish playground,<br/>
-your regal seat;
-</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-In blissful harmony. And for an instant<br/>
-your features become free - tossing<br/>
-all caution to the wind until<br/>
-you pick them back up again -<br/>
-drifting pieces beneath shifting<br/>
-faces - of life; for when the satyrs go,<br/>
-and the creatures give way to the night,<br/>
-you will be true - once again;
-</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-O Demeter. The earth rumbles<br/>
-beneath your steps. Zeus and the others<br/>
-be damned, you have burdens yours<br/>
-to bear; thoughts that seep beneath<br/>
-your vivifying gaze. Radiant light<br/>
-giving way to shades only Selene sees -
-</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-Secrets yours alone to keep. Kaleidoscopes<br/>
-with reflective lights, hints at broken parts pouring out?<br/>
-Perhaps. Magic is a skill you use, brightest<br/>
-in the dark, as Cyclones within your tides<br/>
-keep themselves at bay beneath<br/>
-the waters of your ocean deep;
-</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-You are the sea. Strong enough,<br/>
-You sweep many beneath your waves;<br/>
-Yet the depths of your chasms, none has<br/>
-found. For if they saw what lurked beneath;<br/>
-Resplendent radiance, your brilliant light,<br/>
-Beyond hidden monsters, and depths of dark,<br/>
-would they run in terror, or gasp at light?<br/>
-Perhaps. You are the sea -<br/>
-churning,<br/>
-bursting...<br/>
-holding its secrets safely beneath.
-</p>
-<p class="meta" style="margin-top:0;">TheDescriptor ™/Demeter.</p>
+<div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+  <a class="poem-card-link" href="poem-demeter.html">
+    <div class="card">
+      <h3 style="font-style:italic;">Demeter</h3>
+      <p class="meta">Standalone poem</p>
+      <p style="font-family:var(--font-display); font-style:italic; font-size:1.05rem; line-height:1.7; color:var(--color-dark-text-soft);">
+        You are...Demeter.<br/>
+        Goddess of earth, spring and soil,<br/>
+        Radiant life on very earth…
+      </p>
+      <span class="btn btn--ghost" style="margin-top:auto; pointer-events:none;">Read full poem →</span>
+    </div>
+  </a>
+  <a class="poem-card-link" href="poem-dear-saviour.html">
+    <div class="card">
+      <h3 style="font-style:italic;">Dear Saviour</h3>
+      <p class="meta">Standalone poem</p>
+      <p style="font-family:var(--font-display); font-style:italic; font-size:1.05rem; line-height:1.7; color:var(--color-dark-text-soft);">
+        Dear Saviour,<br/>
+        Why dost thou dim your light, O<br/>
+        Wayfinder…
+      </p>
+      <span class="btn btn--ghost" style="margin-top:auto; pointer-events:none;">Read full poem →</span>
+    </div>
+  </a>
 </div>
-<div class="two-col">
-<div class="card">
-<h3 style="font-style:italic;">Untitled I</h3>
-<p class="meta">Placeholder excerpt</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8;">
-            what the shepherd knows / is that stillness is not the same / as standing still —<br/>
-            it is the water learning / to hold a face without / rippling it away.
-          </p>
-</div>
-<div class="card">
-<h3 style="font-style:italic;">Dear Saviour</h3>
-<p class="meta">Standalone poem</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-Dear Saviour,<br/>
-Why dost thou dim your light, O<br/>
-Wayfinder - the shining versions of yourself,<br/>
-You continually cause to shrink.<br/>
-You embrace rooms with the courage of a cowardly mouse<br/>
-Shrieking from action at the demands of the whips<br/>
-Of the fears of perfection
-</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-They chatter about in your mind, disembodied voices gasping for air<br/>
-Seeking the most precious thing in all the eorld-<br/>
-Your gaze. They know more of you than you may ever know,<br/>
-Wayfinder - a name you constantly forget<br/>
-As you lose pieces of yourself.<br/>
-You pick up the shattered pieces on the gemstone'd plains of your heart,<br/>
-Whispering - Is anyone home? you find yourself<br/>
-On the shores of your own faultlines, the sand on your beaches<br/>
-Extending into the ocean, the familiar song of uncharted waters<br/>
-fading into echoes of the pieces you gave away,
-</p>
-<p style="font-family:var(--font-display); font-style:italic; font-size:1.15rem; line-height:1.8; margin-bottom:1.4em;">
-O wayfinder, when will you wake and see?<br/>
-That the thing that thou seekers<br/>
-Dost seeks thee -<br/>
-If only you<br/>
-Let your light...<br/>
-Breathe.
-</p>
-</div>
-</div>
-<p class="form-note" style="margin-top:26px;">More poems will be added here as they're published. Want to explore your own poetry practice? See <a href="mentorship.html">Poetry 101</a>.</p>
+<p class="form-note" style="margin-top:32px;">More poems will be added here as they're published. Want to explore your own poetry practice? See <a href="mentorship.html">Poetry 101</a>.</p>
 </div>
 </section>
 </main>
@@ -192,7 +117,8 @@ Breathe.
 <h4>Connect</h4>
 <ul>
 <li><a href="https://www.instagram.com/thejamesakande" rel="noopener" target="_blank">Instagram</a></li>
-<li><a href="https://bathroomthoughts.substack.com" rel="noopener" target="_blank">Substack</a></li><li><a href="https://linktr.ee/thedescriptorwrites" rel="noopener" target="_blank">Linktree</a></li>
+<li><a href="https://bathroomthoughts.substack.com" rel="noopener" target="_blank">Substack</a></li>
+<li><a href="https://linktr.ee/thedescriptorwrites" rel="noopener" target="_blank">Linktree</a></li>
 <li><a href="https://www.linkedin.com/in/olatunde-james-akande" rel="noopener" target="_blank">LinkedIn</a></li>
 <li><a href="newsletter.html">Newsletter</a></li>
 <li><a href="contact.html">Contact</a></li>

@@ -12,13 +12,16 @@
 <header class="site-header">
 <div class="nav-wrap">
 <a class="brand" href="index.html">James "TheDescriptor" Akande<span class="brand-sub">Writer &amp; Storyteller</span></a>
-<button aria-label="Toggle navigation" class="nav-toggle">Menu</button>
+<button aria-label="Toggle navigation" aria-expanded="false" class="nav-toggle">
+  <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</button>
 <nav>
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
 <li><a aria-current="page" href="books.html">Books</a></li>
 <li class="nav-item--dropdown">
-<span class="nav-group-label">Poetry &amp; Essays</span>
+<button type="button" class="nav-group-label" aria-expanded="false">Poetry &amp; Essays</button>
 <ul class="nav-dropdown">
 <li><a href="poetry.html">Poetry</a></li>
 <li><a href="essays.html">Essays</a></li>
@@ -50,7 +53,7 @@
 <div class="card-grid">
 <div class="card">
 <span class="tag tag--accent">Creative Non-Fiction</span>
-<div class="card-cover">Tales of a Shepherd<br/><em>Cover placeholder</em></div>
+<div class="card-cover">Tales of a Shepherd<br/></div>
 <h3>Tales of a Shepherd</h3>
 <p class="meta">Musings on Psalm 23</p>
 <p>A reflective walk through Psalm 23, verse by verse — on being led, wanting for nothing, and moving through the valley without fear. Part meditation, part memoir.</p>
@@ -58,7 +61,7 @@
 </div>
 <div class="card">
 <span class="tag tag--gold">Poetry Collection</span>
-<div class="card-cover">The Infinite Now<br/><em>Cover placeholder</em></div>
+<div class="card-cover">The Infinite Now<br/></div>
 <h3>The Infinite Now</h3>
 <p class="meta">Poetry Collection / Anthology</p>
 <p>An anthology built around presence — the strange, infinite weight of the current moment, and the ways poetry helps us actually stay in it.</p>
@@ -75,15 +78,15 @@
 <div class="card-grid">
 <div class="card">
 <span class="tag">Fiction · In Progress</span>
-<div class="card-cover">Untitled Short<br/>Fiction Project<br/><em>Cover placeholder</em></div>
-<h3>Untitled Fiction Collection</h3>
+<div class="card-cover"></div>
+<h3>Fiction Collection</h3>
 <p class="meta">Working title · No release date yet</p>
 <p>A collection of short stories currently taking shape — more details to come as the work develops.</p>
 </div>
 <div class="card">
 <span class="tag tag--accent">Non-Fiction · Early Draft</span>
-<div class="card-cover">Next Essay<br/>Collection<br/><em>Cover placeholder</em></div>
-<h3>Untitled Essay Collection</h3>
+<div class="card-cover"></div>
+<h3>Essay Collection</h3>
 <p class="meta">Working title · No release date yet</p>
 <p>Pulling together threads from years of personal essays into something longer-form. Still early days.</p>
 </div>
@@ -102,7 +105,7 @@
 <div>
 <h4>Explore</h4>
 <ul>
-<li><a href="books.html">Books</a></li>
+<li><a aria-current="page" href="books.html">Books</a></li>
 <li><a href="poetry.html">Poetry</a></li>
 <li><a href="essays.html">Essays</a></li>
 <li><a href="fiction.html">Fiction</a></li>

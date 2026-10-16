@@ -12,13 +12,16 @@
 <header class="site-header">
 <div class="nav-wrap">
 <a class="brand" href="index.html">James "TheDescriptor" Akande<span class="brand-sub">Writer &amp; Storyteller</span></a>
-<button aria-label="Toggle navigation" class="nav-toggle">Menu</button>
+<button aria-label="Toggle navigation" aria-expanded="false" class="nav-toggle">
+  <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</button>
 <nav>
 <ul class="nav-links">
 <li><a aria-current="page" href="index.html">Home</a></li>
 <li><a href="books.html">Books</a></li>
 <li class="nav-item--dropdown">
-<span class="nav-group-label">Poetry &amp; Essays</span>
+<button type="button" class="nav-group-label" aria-expanded="false">Poetry &amp; Essays</button>
 <ul class="nav-dropdown">
 <li><a href="poetry.html">Poetry</a></li>
 <li><a href="essays.html">Essays</a></li>
@@ -69,7 +72,7 @@
 <span class="eyebrow">Latest Release</span>
 <div class="hero-grid" style="align-items:flex-start;">
 <div class="card-cover" style="max-width:280px; aspect-ratio:2/3;">
-          Tales of a Shepherd<br/><em>Cover placeholder</em>
+          Tales of a Shepherd<br/>
 </div>
 <div>
 <h2>Tales of a Shepherd</h2>
@@ -98,7 +101,7 @@
           <cite>On The Infinite Now</cite>
 </blockquote>
 </div>
-<p class="form-note text-center" style="text-align:center; margin-top:20px;">Reviews shown are placeholders — swap in real reader and press quotes as they come in.</p>
+
 </div>
 </section>
 <!-- LATEST ESSAY SNIPPET -->
